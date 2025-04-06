@@ -467,10 +467,10 @@ void execute_command(const char* command) {
         terminal_initialize();
     } else if (strcmp(command, "about") == 0) {
         terminal_writestring("DataOS - A simple operating system written in C\n");
-        terminal_writestring("Version: 0.2.0-alpha2\n");
+        terminal_writestring("Version: 0.2.0\n");
         terminal_writestring("Created as a demonstration of basic OS concepts\n");
     } else if (strcmp(command, "ver") == 0) {
-        terminal_writestring("DataOS Version: 0.2.0-alpha2\n");
+        terminal_writestring("DataOS Version: 0.2.0\n");
     } else if (strncmp(command, "echo ", 5) == 0) {
         // Echo command - print the text after "echo "
         terminal_writestring(command + 5);
