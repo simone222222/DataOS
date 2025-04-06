@@ -241,7 +241,7 @@ void execute_command(const char* command) {
         terminal_initialize();
     } else if (strcmp(command, "about") == 0) {
         terminal_writestring("DataOS - A simple operating system written in C\n");
-        terminal_writestring("Version: 0.1\n");
+        terminal_writestring("Version: 0.2.0-alpha1\n");
         terminal_writestring("Created as a demonstration of basic OS concepts\n");
     } else if (strlen(command) > 0) {
         terminal_writestring("Unknown command: ");
@@ -254,7 +254,14 @@ void execute_command(const char* command) {
 void kernel_main(void) {
     // Initialize terminal
     terminal_initialize();
-
+    // ascii art logo
+    terminal_writestring("\n");
+    terminal_writestring("      _______       _______       _______      \n");
+    terminal_writestring("     |       |     |       |     |       |     \n");
+    terminal_writestring("     |  ____  |     |  ____  |     |  ____  |     \n");
+    terminal_writestring("     | |    | |     | |    | |     | |    | |     \n");
+    terminal_writestring("     | |____| |_____| |____| |_____| |____| |     \n");
+    terminal_writestring("     |_______|     |_______|     |_______|     \n");
     // Welcome message
     terminal_writestring("Welcome to DataOS!\n");
     terminal_writestring("A simple operating system written in C\n");
