@@ -11,3 +11,11 @@ grub-mkrescue -o dataos.iso isodir
 
 and run:
 qemu-system-i386 -cdrom dataos.iso
+
+# known issues
+the screen may not scroll
+you can't use the backspace key due to a bug
+
+# TODO
+add new commands like ls, mkdir and more
+add a filesystem
