@@ -1,3 +1,5 @@
+![17439653983202886300019370401690](https://github.com/user-attachments/assets/48913b01-e474-48d7-a07c-890a98d59424)
+
 # DataOS
 an os written in c
 
