@@ -13,8 +13,8 @@ and run:
 qemu-system-i386 -cdrom dataos.iso
 
 # known issues
-the screen may not scroll
 you can't use the backspace key due to a bug
+the snake game is fast, very fast 
 
 # TODO
 add new commands like ls, mkdir and more
