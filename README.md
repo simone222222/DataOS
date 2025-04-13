@@ -3,6 +3,17 @@
 # DataOS
 an os written in c
 
+# requirements
+nasm (for assembling)
+
+gcc (for compiling)
+
+ld (for linking)
+
+grub-mkrescure (for making an iso image)
+
+qemu (for testing)
+
 # build and run
 type make
 
@@ -10,6 +21,8 @@ and run make run
 
 
 # known issues
+the build may fail on windows without wsl
+
 you can't use the backspace key due to a bug
 
 the snake game is fast, very fast 
