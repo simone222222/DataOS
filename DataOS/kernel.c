@@ -293,6 +293,14 @@ void keyboard_read_line(char* buffer, size_t buffer_size) {
     buffer[i] = '\0';
 }
 
+// delay
+void delay(uint32_t count) {
+    volatile uint32_t i;
+    for (i = 0; i < count; i++) {
+        __asm__ volatile("nop");
+    }
+}
+
 // Simple Snake game
 void play_snake_game() {
     // Clear the screen
@@ -437,7 +445,9 @@ void play_snake_game() {
             food_x = 1 + (inb(KEYBOARD_DATA_PORT) % (GAME_WIDTH - 1));
             food_y = 2 + (inb(KEYBOARD_DATA_PORT) % (GAME_HEIGHT - 2));
         }
+        delay(20000000);
     }
+
 
     // Game over message
     terminal_initialize();
