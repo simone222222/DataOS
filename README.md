@@ -22,10 +22,8 @@ and run make run
 
 # known issues
 the build may fail on windows without wsl
-
-you can't use the backspace key due to a bug
-
-the snake game is fast, very fast 
+Fixed backspace key not working.
+Fixed snake game too fast
 
 # TODO
 add new commands like ls, mkdir and more
